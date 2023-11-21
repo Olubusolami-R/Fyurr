@@ -25,7 +25,6 @@ class Venue(db.Model):
     def __repr__(self):
         return f'<Venue {self.phone} {self.name} {self.city}>'
     # date_added=db.Column(db.DateTime,default=datetime.datetime.now())
-    # TODO: implement any missing fields, as a database migration using Flask-Migrate
 
 class Artist(db.Model):#parent artist can have many shows
     __tablename__ = 'artists'
